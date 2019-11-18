@@ -28,4 +28,4 @@ with open('stopwords.txt', 'r') as fp:
         stopwords_.append(word.strip())
 
 if __name__ == '__main__':
-  print(stopwords_)
+    print(stopwords_)
