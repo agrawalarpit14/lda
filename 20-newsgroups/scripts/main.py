@@ -19,8 +19,8 @@ lemmatized_data = processed_data(tokenized_data)
 id2word = gensim.corpora.Dictionary(lemmatized_data)
 corpus = [id2word.doc2bow(text) for text in lemmatized_data]
 
-tfidf = gensim.models.TfidfModel(corpus)
-corpus = tfidf[corpus]
+# tfidf = gensim.models.TfidfModel(corpus)
+# corpus = tfidf[corpus]
 
 
 def compute_coherence(k):
@@ -52,16 +52,17 @@ def tuning():
     pd.DataFrame(model_results).to_csv('tfidf_results.csv', index=False)
 
 
-tuning()
+# tuning()
 
-# lda_model = gensim.models.LdaModel(corpus=corpus,
-#                                    id2word=id2word,
-#                                    num_topics=20,
-#                                    random_state=100,
-#                                    chunksize=100,
-#                                    passes=10,
-#                                    per_word_topics=True)
+lda_model = gensim.models.LdaModel(corpus=corpus,
+                                   id2word=id2word,
+                                   num_topics=16,
+                                   random_state=100,
+                                   chunksize=100,
+                                   passes=10,
+                                   per_word_topics=True,
+                                   alpha='symmetric')
 
-# lda_model.save(datapath('20newsgroups_bow'))
-# vis = pyLDAvis.gensim.prepare(lda_model, corpus, id2word)
-# pyLDAvis.save_html(vis, '20newsgroups_bow.html')
+lda_model.save(datapath('20newsgroups_bow_16'))
+vis = pyLDAvis.gensim.prepare(lda_model, corpus, id2word)
+pyLDAvis.save_html(vis, '20newsgroups_bow_16.html')
