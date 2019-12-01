@@ -1,7 +1,7 @@
 ## LDA on 20-newsgroups dataset
 
-- [!Data](data/)
+- [Data](data/)
 
-- [!Code and Output](scripts/)
+- [Code and Output](scripts/)
 	- 
 
