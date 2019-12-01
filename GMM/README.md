@@ -1,0 +1,2 @@
+- All the code is in the notebook GMM_2.ipynb.
+- Function name are self explainatory
