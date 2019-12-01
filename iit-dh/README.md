@@ -17,4 +17,4 @@ Code can be found in the scripts folder. Filenames are self explainatory.
 - [Bag of Words output](bow_output/)
 - [tfidf output](tfidf_output/)
 - All the .html file are generated using pyLDAvis
-- Name of the html file follow this convention iitdh_[number of topics]_[bow/tfidf]_[alpha value]_[beta value].html
+- Name of the html file follow this convention iitdh_[number of topics]_[bow or tfidf ]_[alpha value]_[beta value].html
