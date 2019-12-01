@@ -10,7 +10,10 @@ Code can be found in the scripts folder. Filenames are self explainatory.
 - lemmatization.py: To lemmatize the data
 - tokenization.py: To tokenize the data
 - stopwords.py: To remove all the stopwords
-- main.py: Where all the functions from above files are used
+- main.py: Where all the functions from above files are used.
 
 ### Output
 
+- [Bag of Words output](bow_output/)
+- [tfidf output](tfidf_output/)
+- All the .html file are generated using pyLDAvis

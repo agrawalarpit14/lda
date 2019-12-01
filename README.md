@@ -10,3 +10,5 @@
 - [Read Detailed Report](Report_Final.pdf)
 
 - [Poster](Poster.pdf)
+
+- python version used is python3
