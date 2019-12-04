@@ -7,6 +7,7 @@ find it [here](https://github.com/agrawalarpit14/lda-private).
 ### Code
 
 python version: 3
+
 Code can be found in the scripts folder. Filenames are self explainatory.
 - lemmatization.py: To lemmatize the data
 - tokenization.py: To tokenize the data
